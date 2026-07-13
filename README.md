@@ -110,6 +110,12 @@ Automatic invoicing · Event archive · Multi-language support · Full REST API
 
 <br>
 
+## Deployment
+
+For production deployments, including Dokploy-based deployments, use the canonical guide in [DEPLOYMENT.md](DEPLOYMENT.md).
+
+The deployment reference files live in [docker/dokploy/docker-compose.yml](docker/dokploy/docker-compose.yml), [docker/dokploy/.env.example](docker/dokploy/.env.example), and [docker/dokploy/README.md](docker/dokploy/README.md).
+
 ## Compare
 
 | Feature                          | Hi.Events | Eventbrite | Tickettailor | Dice    |
