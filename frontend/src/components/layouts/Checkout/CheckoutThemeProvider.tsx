@@ -35,7 +35,7 @@ const DARK_PALETTE = {
 function createColorPalette(accentColor: string): MantineColorsTuple {
     const rgb = hexToRgb(accentColor);
     if (!rgb) {
-        return ['#f3e8ff', '#e9d5ff', '#d8b4fe', '#c084fc', '#a855f7', '#9333ea', '#7c3aed', '#6d28d9', '#5b21b6', '#4c1d95'];
+        return ['#fff5eb', '#ffe7d3', '#ffd1ac', '#ffb67d', '#ff9b4f', '#fe6a06', '#fe6a06', '#fe6a06', '#e05800', '#bb4700'];
     }
 
     const {r, g, b} = rgb;

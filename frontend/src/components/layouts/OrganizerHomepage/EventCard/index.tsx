@@ -19,7 +19,7 @@ interface EventCardProps {
 
 const placeholderEmojis = ['🎉', '🎪', '🎸', '🎨', '🌟'];
 
-export const EventCard: React.FC<EventCardProps> = ({event, primaryColor = '#8b5cf6'}) => {
+export const EventCard: React.FC<EventCardProps> = ({event, primaryColor = '#fe6a06'}) => {
     const dateTextColor = isLightColor(primaryColor) ? '#000000' : '#ffffff';
 
     const emojiIndex = event.id ? Number(event.id) % placeholderEmojis.length : 0;

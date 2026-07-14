@@ -75,8 +75,8 @@ export const App: FC<
             <MantineProvider
                 theme={{
                     colors: {
-                        primary: generateColors(getConfig("VITE_APP_PRIMARY_COLOR", "#40296C") as string),
-                        secondary: generateColors(getConfig("VITE_APP_SECONDARY_COLOR", "#3d0b44") as string),
+                        primary: generateColors(getConfig("VITE_APP_PRIMARY_COLOR", "#fe6a06") as string),
+                        secondary: generateColors(getConfig("VITE_APP_SECONDARY_COLOR", "#ff8a3d") as string),
                     },
                     primaryColor: "primary",
                     fontFamily: "Outfit, sans-serif",

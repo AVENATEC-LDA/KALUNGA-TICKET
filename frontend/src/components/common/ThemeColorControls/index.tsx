@@ -51,7 +51,7 @@ export const ThemeColorControls = ({
                 label={t`Accent Color`}
                 description={t`The primary brand color used for buttons and highlights`}
                 size="sm"
-                value={values.accent || '#8b5cf6'}
+                value={values.accent || '#fe6a06'}
                 onChange={handleAccentChange}
                 disabled={disabled}
             />

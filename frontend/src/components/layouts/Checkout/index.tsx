@@ -25,7 +25,7 @@ import {trackPixelEvent, hasActivePixels} from "../../../utilites/trackingPixels
 import {CookieConsentBanner} from "../../common/CookieConsentBanner";
 import {useGetEventPublic} from "../../../queries/useGetEventPublic.ts";
 
-const DEFAULT_ACCENT = '#8b5cf6';
+const DEFAULT_ACCENT = '#fe6a06';
 
 const Checkout = () => {
     const {eventId, orderShortId} = useParams();

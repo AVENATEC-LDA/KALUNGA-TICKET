@@ -10,7 +10,7 @@ import {CheckoutThemeProvider} from "../../layouts/Checkout/CheckoutThemeProvide
 import {detectMode} from "../../../utilites/themeUtils.ts";
 import {BouncingEmoji} from "../../common/BouncingEmoji";
 
-const DEFAULT_ACCENT = '#8b5cf6';
+const DEFAULT_ACCENT = '#fe6a06';
 
 interface JoinWaitlistModalProps extends GenericModalProps {
     product: Product;
