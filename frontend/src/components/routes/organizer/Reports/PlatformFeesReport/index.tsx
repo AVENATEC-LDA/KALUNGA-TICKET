@@ -72,7 +72,7 @@ const PlatformFeesReport = () => {
         },
         {
             key: 'fee_amount' as const,
-            label: t`Hi.Events Fee`,
+            label: t`KALUNGA TICKET Fee`,
             sortable: true,
             render: (value: number, row: any) => formatCurrency(value, row.currency)
         },

@@ -118,7 +118,7 @@ const AuthLayout = () => {
 
         if (clickCountRef.current >= 5) {
             clickCountRef.current = 0;
-            showInfo(`HiEvents v${__APP_VERSION__}`);
+            showInfo(`KALUNGA TICKET v${__APP_VERSION__}`);
         }
     }, []);
 
@@ -134,21 +134,21 @@ const AuthLayout = () => {
                         <div className={classes.logo} onClick={handleLogoClick} style={{cursor: 'pointer'}}>
                             <img
                                 src="/logos/kalunga-ticket-logo.png"
-                                alt={t`${getConfig("VITE_APP_NAME", "Hi.Events")} logo`}
+                                alt={t`${getConfig("VITE_APP_NAME", "KALUNGA TICKET")} logo`}
                             />
                         </div>
                         <div className={classes.wrapper}>
                             <Outlet />
                             {/*
-                             * (c) Hi.Events Ltd 2025
+                             * (c) KALUNGA TICKET Ltd 2025
                              *
                              * PLEASE NOTE:
                              *
-                             * Hi.Events is licensed under the GNU Affero General Public License (AGPL) version 3.
+                             * KALUNGA TICKET is licensed under the GNU Affero General Public License (AGPL) version 3.
                              *
                              * You can find the full license text at: https://github.com/HiEventsDev/hi.events/blob/main/LICENCE
                              *
-                             * In accordance with Section 7(b) of the AGPL, we ask that you retain the "Powered by Hi.Events" notice.
+                             * In accordance with Section 7(b) of the AGPL, we ask that you retain the "Powered by KALUNGA TICKET" notice.
                              *
                              * If you wish to remove this notice, a commercial license is available at: https://hi.events/licensing
                              */}

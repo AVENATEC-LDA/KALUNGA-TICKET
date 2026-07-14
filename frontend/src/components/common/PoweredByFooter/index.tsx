@@ -6,15 +6,15 @@ import {iHavePurchasedALicence, isHiEvents} from "../../../utilites/helpers.ts";
 import {getConfig} from "../../../utilites/config.ts";
 
 /**
- * (c) Hi.Events Ltd 2025
+ * (c) KALUNGA TICKET Ltd 2025
  *
  * PLEASE NOTE:
  *
- * Hi.Events is licensed under the GNU Affero General Public License (AGPL) version 3.
+ * KALUNGA TICKET is licensed under the GNU Affero General Public License (AGPL) version 3.
  *
  * You can find the full license text at: https://github.com/HiEventsDev/hi.events/blob/main/LICENCE
  *
- * In accordance with Section 7(b) of the AGPL, you must retain the "Powered by Hi.Events" notice.
+ * In accordance with Section 7(b) of the AGPL, you must retain the "Powered by KALUNGA TICKET" notice.
  *
  * If you wish to remove this notice, a commercial license is available at: https://hi.events/licensing
  */
@@ -34,7 +34,7 @@ export const PoweredByFooter = (
             medium = window.location.pathname.includes("/widget") ? "widget" : "app";
         }
 
-        const url = new URL("https://hi.events");
+        const url = new URL("https://kalunga-ticket.com");
         url.searchParams.set("utm_source", "app-powered-by-footer");
         url.searchParams.set("utm_medium", isHiEvents() ? medium : 'self-hosted-' + medium);
         url.searchParams.set("utm_campaign", "powered-by");
@@ -52,7 +52,7 @@ export const PoweredByFooter = (
                 className={classes.ctaLink}
                 title={"Effortlessly manage events and sell tickets online with Hi.Events"}
             >
-                {t`Try Hi.Events Free`}
+                {t`Try KALUNGA TICKET Free`}
             </a>
         </>
     ) : (
@@ -63,7 +63,7 @@ export const PoweredByFooter = (
                 target="_blank"
                 title={"Effortlessly manage events and sell tickets online with Hi.Events"}
             >
-                Hi.Events
+                KALUNGA TICKET
             </a>{" "}
             🚀
         </>
