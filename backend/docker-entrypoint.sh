@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+cd /var/www/html || exit 1
+
 if [ -f /var/www/html/artisan ]; then
   php artisan config:clear >/dev/null 2>&1 || true
 

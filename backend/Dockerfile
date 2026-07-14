@@ -1,6 +1,7 @@
 FROM serversideup/php:8.4-fpm-nginx-alpine
 
 ENV PHP_OPCACHE_ENABLE=1
+WORKDIR /var/www/html
 
 USER root
 
