@@ -18,7 +18,8 @@ RUN chmod -R 755 storage  \
     && chmod -R 775 bootstrap/cache \
     && mkdir -p /var/lib/nginx/tmp \
     && chown -R www-data:www-data /var/lib/nginx \
-    && chmod -R 755 /var/lib/nginx
+    && chmod -R 755 /var/lib/nginx \
+    && chmod +x /var/www/html/docker-entrypoint.sh
 
 RUN composer install \
     --ignore-platform-reqs \
