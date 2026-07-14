@@ -3,7 +3,15 @@ set -e
 
 if [ -f /var/www/html/artisan ]; then
   php artisan config:clear >/dev/null 2>&1 || true
-  php artisan migrate --force
+
+  for attempt in $(seq 1 30); do
+    if php artisan migrate --force; then
+      break
+    fi
+
+    echo "Migration attempt $attempt failed; retrying in 5 seconds..." >&2
+    sleep 5
+  done
 fi
 
 exec "$@"
