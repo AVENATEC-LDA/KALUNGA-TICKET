@@ -133,7 +133,7 @@ const AuthLayout = () => {
                     <main className={classes.container}>
                         <div className={classes.logo} onClick={handleLogoClick} style={{cursor: 'pointer'}}>
                             <img
-                                src={getConfig("VITE_APP_LOGO_DARK", "/logos/hi-events-stacked-light.svg")}
+                                src="/logos/kalunga-ticket-logo.png"
                                 alt={t`${getConfig("VITE_APP_NAME", "Hi.Events")} logo`}
                             />
                         </div>
